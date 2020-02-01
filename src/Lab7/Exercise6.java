@@ -30,7 +30,6 @@ return list;
 public class Exercise6 {
 	public static void main(String[] args)
 	{
-	@SuppressWarnings("deprecation")
 	Test t=new Test();
 	Map<Integer,Date> hmap=new HashMap<Integer,Date>();
 	hmap.put(2,new Date("2018/09/01"));

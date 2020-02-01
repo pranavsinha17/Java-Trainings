@@ -1,5 +1,4 @@
 package Lab1;
-import java.util.*;
 class Calc{
 	public int calcSum(int n)
 	{

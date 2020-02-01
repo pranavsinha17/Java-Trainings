@@ -11,15 +11,21 @@ class Test{
 	}
 	boolean validateLast()
 	{
+	
 		str=s.split("_",0);
-//		for(int i=0;i<str.length;i++)
-//			System.out.println(str[i]);
 		if(!(str[str.length-1].equals("job")))
 			return false;
 		return true;
 	}
 	boolean validateLeft()
 	{
+		if(validateLast()==false)
+		{
+			if(s.length()<8)
+				return false;
+			return true;
+		}
+		else {
 		int cnt=0;
 		for(int i=0;i<str.length-1;i++)
 		{
@@ -27,6 +33,7 @@ class Test{
 		}
 		if(cnt<8)
 		return false;
+		}
 	return true;	
 	}
 	boolean validate()
@@ -47,15 +54,15 @@ public static void main(String[]args)
 		System.out.println("Username is valid");
 	}
 	else {
-		if(t.validateLast()==false&&t.validateLeft()!=false)
+		if(t.validateLast()==false&&t.validateLeft()==true)
 		{
 			System.out.println("Username must end with _job");
 		}
-		else if(t.validateLeft()==false && t.validateLast()!=false)
+		else if(t.validateLeft()==false && t.validateLast()==true)
 		{
 			System.out.println("Username must contain atleast 8 words excluding _job");
 		}
-		else if(t.validateLast()==false&&t.validateLeft()==false)
+		else if(t.validateLeft()==false&&t.validateLast()==false)
 		{
 			System.out.println("Username must end with _job");	
 			System.out.println("Username must contain atleast 8 words excluding _job");

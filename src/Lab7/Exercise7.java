@@ -1,9 +1,5 @@
 package Lab7;
-
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
-
 class Sorted{
 	public int[] getSorted(int a[])
 	{

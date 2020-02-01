@@ -34,6 +34,8 @@ public class CopyDataThread extends Thread {
 			    }
 			    
 				fr.flush();
+				br.close();
+				fr.close();
 			}
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block

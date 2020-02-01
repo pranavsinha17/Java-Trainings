@@ -39,6 +39,8 @@ public static void main(String[] args)
 				    }
 				    
 					fr.flush();
+					br.close();
+					fr.close();
 				}
 			} catch (FileNotFoundException e) {
 				// TODO Auto-generated catch block

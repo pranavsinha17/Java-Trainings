@@ -65,6 +65,7 @@ public class Excercise3 {
 		
 		 rs.getSorted(intInteger);
 		 rs.displaySortArray(intInteger);
+		 sc.close();
 	}
 
 }
